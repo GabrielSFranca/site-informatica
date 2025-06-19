@@ -1,4 +1,3 @@
-import { Url } from "next/dist/shared/lib/router/router";
 
 export type Event = {
     id: number;
@@ -6,7 +5,7 @@ export type Event = {
     description: string;
     date: Date;
     location: string;
-    image: Url | string;
+    image: string;
     type: string;
 }
 

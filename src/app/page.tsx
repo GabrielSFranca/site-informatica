@@ -3,12 +3,14 @@ import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import React from "react";
 //import styles from "./ui/page.module.css";
+import { Carousel } from "./components/Carousel";
 
 export default function Home() {
   return (
     <div>
       <Header />
       <main>
+        <Carousel />
         <p>This is a simple Next.js application.</p>
         <Image
           src="/nextjs-logo.png"
