@@ -1,35 +1,21 @@
-export function Carousel(){
-    return (
-        <div className="carousel">
-          <div className="carousel-container">
-            <div className="car-item">
-                <h2 className="car-title">
-                    titulo
-                </h2>
-                <p className="car-desc">
-                    descricao
-                </p>
-            </div>
-            
-            <div className="car-item">
-                <h2 className="car-title">
-                    titulo
-                </h2>
-                <p className="car-desc">
-                    descricao
-                </p>
-            </div>
-            
-            <div className="car-item">
-                <h2 className="car-title">
-                    titulo
-                </h2>
-                <p className="car-desc">
-                    descricao
-                </p>
-            </div>
-          </div>  
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
 
-        </div>
-    );
+
+
+interface Event{
+    id: number;
+    title: string;
+    description: string;
+    imageUrl: string;
+}
+
+export function Carousel() {
+    return (
+        <Swiper slidesPerView={1} spaceBetween={20}>
+
+
+        </Swiper>
+    )
 }
