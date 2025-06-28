@@ -1,15 +1,15 @@
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 
-
+/*
 
 interface Event{
     id: number;
     title: string;
     description: string;
     imageUrl: string;
-}
+}*/
 
 export function Carousel() {
     return (
