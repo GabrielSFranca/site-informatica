@@ -1,23 +1,17 @@
-'use client'
-
-import React from 'react';
+"use client";
+import React from "react";
 
 interface BtnProps {
-  texto: string;
-  //onClick?: () => void; // sem tipo e estilo
+  label : string
+  onClick?: () => void
 }
 
-export function Button({
-  texto
-  //onClick
-} : BtnProps){
+export function Button( { label, onClick } : BtnProps ) {
   return (
     <button
-      //onClick={onClick}
-      className='btn'
-      >
-        {texto}
+      onClick={onClick} 
+      className="btn">
+      {label}
     </button>
   );
 }
-

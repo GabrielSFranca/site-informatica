@@ -159,6 +159,55 @@ html, body {
     background-position: center;
 }
 
+.btn {
+    background-color: var(--azul-principal); /* cor de fundo */
+    /*border: black;*/
+    /*border: none;  remove borda padrão */
+    padding: 10px 20px; /* espaço interno */
+    /*border-radius: 8px;  cantos arredondados */
+    font-family: var(--font-heading);
+    color: white; /* cor do texto */
+    font-size: 16px; /* tamanho da fonte */
+    cursor: pointer; /* mostra a mãozinha ao passar o mouse */
+    transition: background-color 0.3s; /* suaviza a transição */
+}
+
+
+/* cor ao passar o mouse */
+.btn:hover{
+    background-color: black;
+    text-decoration: underline;
+}
+
+
+.secao {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;   
+}
+
+.secao-title{
+    color: var(--azul-principal);
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: var(--font-heading);
+    position: relative;
+}
+
+.card {
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card-title{
+    color: var(--azul-principal);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
 
 
 
