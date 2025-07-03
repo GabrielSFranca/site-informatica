@@ -1,4 +1,4 @@
-export default function NovaRota() {
+export default function Projetos() {
     return (
         <div>
             <h1>Nova Rota</h1>
