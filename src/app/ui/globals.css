@@ -14,7 +14,7 @@
     --azul-principal: #0A2A66;
     --azul-secundario: #1a4b8c;
     --cinza-claro: #f8fafc;
-    --cinza-texto: #4a5568;
+    --cinza-texto: #374151;
     --ocean: #0FC1B7;
     --cinza-escuro: #3A3A3A;
     /* Fontes */
@@ -180,13 +180,14 @@ html, body {
 }
 
 
-.secao {
+.section {
     padding: 60px 20px;
     max-width: 1200px;
-    margin: 0 auto;   
+    margin: 0 auto;
 }
 
-.secao-title{
+
+.sec-title {
     color: var(--azul-principal);
     font-size: 2.5rem;
     margin-bottom: 40px;
@@ -194,6 +195,25 @@ html, body {
     font-family: var(--font-heading);
     position: relative;
 }
+
+.sec-title:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--ocean);
+    margin: 15px auto;
+}
+
+.institutional-sec-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+
+
 
 .card {
     padding: 30px;
@@ -206,6 +226,7 @@ html, body {
     color: var(--azul-principal);
     margin-bottom: 15px;
     font-size: 1.5rem;
+    font-family: var(--font-logo);
 }
 
 
@@ -213,24 +234,88 @@ html, body {
     font-family: var(--font-body);
 }
 
+.texto-apres {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+
+.texto-apres p {
+    font-family: var(--font-body);
+    color: var(--cinza-texto); /* gray-700 */
+    margin-bottom: 1rem;
+}
+
 
 .map-container {
-    position: relative;
+    display: flex;
+    flex: 1;
+    max-width: 100%;
+    height: 450px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    flex-direction: column;
+    
+    /*position: relative;
     width: 100%;
     height: 24rem;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);*/
 }
 
+
+.map-title {
+    padding: 20px 20px 10px 20px;
+    text-align: center;
+}
+
+/*.map-title h3 {
+    color: var(--azul-principal);
+    font-size: 1.8rem;
+    margin-bottom: 0;
+    font-family: var(--font-logo);
+}*/
+
+
+
 .map-frame {
-    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    flex-grow: 1;
+    /*position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    border: 0;
+    border: 0;*/
 }
+
+
+.map-address { /* Estilo para a div que contém o endereço */
+    padding: 10px 20px 20px 20px; /* Padding: top, right, bottom, left */
+    text-align: center;
+}
+
+
+.location-icon {
+  color: #1a73e8; /* Azul do Material Design */
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+
+.map-address p {
+    color: var(--cinza-texto);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 0; /* Remover margem inferior se for o último elemento */
+}
+
+
 
 
 
@@ -335,4 +420,54 @@ html, body {
 }
 
 
+        /* Responsividade */
+        @media (max-width: 1024px) {
+            .institutional-sec-content {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            /*.postgrad-cards {
+                grid-template-columns: 1fr;
+            }*/
+        }
 
+        @media (max-width: 768px) {
+            .nav-main {
+                display: none;
+            }
+            
+            .institutional-sec-content {
+                grid-template-columns: 1fr;
+            }
+            
+            /*.carrossel {
+                height: 400px;
+            }
+            
+            .carrossel-titulo {
+                font-size: 2rem;
+            }
+            
+            .carrossel-descricao {
+                font-size: 1rem;
+            }*/
+        }
+
+
+/*
+
+@media (min-width: 768px) {
+    .institucional {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .card, .map-container {
+        flex: 1;
+    }
+
+    .map-container {
+        height: 320px;
+    }
+}
+*/

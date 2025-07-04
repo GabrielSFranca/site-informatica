@@ -7,7 +7,7 @@ type SectProps = {
 
 export function Section({title, children} : SectProps) {
     return (
-        <section className="secao">
+        <section className="section">
             <div className="secao-container">
                 <h2 className="secao-title">{title}</h2>
                 <div className="secao-children">{children}</div>
