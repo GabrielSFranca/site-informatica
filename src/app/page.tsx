@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Button } from "../components/button";
 import { InstitutionalSection } from "../components/institutionalsection";
-//import { SwiperCarousel } from "@/components/swippercarousel";
+import { SwiperCarousel } from "@/components/swipercarousel";
 
 
 //import styles from "./ui/page.module.css";
@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <div>
-      {/*<SwiperCarousel />*/}
+      {/*<SwiperCarousel />*/}  
 
       <p>This is a simple Next.js application.</p>
       <Image
@@ -27,6 +27,8 @@ export default function Home() {
           height={200}
       />
 
+      <SwiperCarousel />
+      
       <Button label="Saiba Mais >" />
         <InstitutionalSection />
     </div>

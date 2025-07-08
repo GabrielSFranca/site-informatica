@@ -1,14 +1,10 @@
 
 export type Event = {
-    id: number;
-    title: string;
-    description: string;
-    date: Date;
-    location: string;
-    image: string;
-    type: string;
-}
-
-export type Course = {
-    id: number;
+    id?: number;
+    titulo: string;
+    desc: string;
+    date: Date | string;
+    tipo: "event" | "news";
+    loc?: string;
+    criadoEm?: Date | string;
 }
